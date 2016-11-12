@@ -1,0 +1,71 @@
+package NewPackage;
+
+public class Animal {
+	public static void main(String[] args) {
+		
+		Animal Cat = new Animal(1,4,88);
+		Animal Dog = new Animal(2,28);
+		
+		System.out.println(Cat);
+
+		System.out.println(Dog);
+		
+}
+	
+	
+}
+
+
+public class Cat extends Animal {
+	private double weight;
+	protected double growth;
+	public double year;
+	
+	public double getWeight() {
+		return weight;
+	}
+	public void setWeight(double weight) {
+		this.weight = weight;
+	}
+	public double getGrowth() {
+		return growth;
+	}
+	public void setGrowth(double growth) {
+		this.growth = growth;
+	}
+	public double getYear() {
+		return year;
+	}
+	public void setYear(double year) {
+		this.year = year;
+	}
+
+
+}
+
+public class Dog extends Animal {
+private double weight;
+private double growth;
+public double year;
+protected int look;
+
+public double getWeight() {
+	return weight;
+}
+public void setWeight(double weight) {
+	this.weight = weight;
+}
+public double getGrowth() {
+	return growth;
+}
+public void setGrowth(double growth) {
+	this.growth = growth;
+}
+public double getLook() {
+	return look;
+}
+public void setLook(int look) {
+	this.look = look;
+}
+	
+}
